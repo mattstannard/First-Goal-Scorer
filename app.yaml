@@ -1,0 +1,28 @@
+runtime: php74
+
+handlers:
+- url: /favicon\.ico
+  static_files: public/favicon.ico
+  upload: public/favicon\.ico
+
+- url: /.*
+  script: public/index.php
+
+env_variables:
+  APP_ENV: production
+  APP_DEBUG: false
+  APP_KEY: dfj0i4380DDSMKSDAsacxjndasDSS
+  APP_LOCALE: en
+  APP_FALLBACK_LOCALE: en
+  DB_CONNECTION: mysql
+  DB_HOST: norwood.stannard.uk
+  DB_PORT: 3306
+  DB_DATABASE: fgs
+  DB_USERNAME: matt
+  DB_PASSWORD: Archie2013!!
+  DB_CA_CERT_PATH: /keys/ca-cert.pem
+  DB_CLIENT_CERT_PATH: /keys/client-cert.pem
+  DB_CLIENT_KEY_PATH: /keys/client-key.pem
+  CACHE_DRIVER: file
+  SESSION_DRIVER: file
+  QUEUE_DRIVER: sync
